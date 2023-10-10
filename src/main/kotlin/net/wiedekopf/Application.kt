@@ -50,7 +50,6 @@ fun main() {
         port = PORT,
         host = HOST,
         module = Application::module,
-        watchPaths = listOf(feedConfigLocation.absolutePathString())
     ).start(wait = true)
 }
 
