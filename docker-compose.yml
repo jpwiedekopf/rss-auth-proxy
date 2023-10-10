@@ -1,11 +1,13 @@
 version: '3'
 
 services:
-  rss-proxy:
+  rss-auth-proxy:
     image: rss-auth-proxy:1.0.0
+    container_name: rss-auth-proxy
     build: .
+    restart: always
     ports:
       - "8123:8123"
     volumes:
       - ./feeds.yaml:/config/feeds.yaml
-      - ./secrets:/secrets
+      - ./secrets/:/secrets/
