@@ -1,0 +1,7 @@
+feeds:
+  - name: rss-feed.xml
+    path: project-kilburn
+    upstream: "https://example.com/kilburn/feed.xml"
+    authType: Basic
+    usernameFile: /secrets/kilburn/username.secret
+    passwordFile: /secrets/kilburn/password.secret
