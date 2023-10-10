@@ -2,9 +2,8 @@ version: '3'
 
 services:
   rss-auth-proxy:
-    image: rss-auth-proxy:1.0.0
+    image: quay.io/jpwiedekopf/rss-auth-proxy:1.0.0
     container_name: rss-auth-proxy
-    build: .
     restart: always
     ports:
       - "8123:8123"
